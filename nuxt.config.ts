@@ -8,7 +8,6 @@ const alias = {
 }
 
 export default defineNuxtConfig({
-  ssr: true,
   app: {
     head: {
       title: 'Nuxt 3 Awesome Starter',
