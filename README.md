@@ -1,45 +1,6 @@
-# Nuxt 3 Minimal Starter
+### star
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
-
-## Setup
-
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+`pnpm dlx nuxi init nuxt-app`
 
 ### fix-bug
 
@@ -47,3 +8,7 @@ pnpm install --shamefully-hoist
 
 .npmrc
 shamefully-hoist=true
+
+### 体系
+
+nuxt3 + vue3 + unocss + autoImport + typescript
