@@ -40,3 +40,10 @@ npm run preview
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/guide/deploy/presets) for more information.
+
+### fix-bug
+
+pnpm install --shamefully-hoist
+
+.npmrc
+shamefully-hoist=true
