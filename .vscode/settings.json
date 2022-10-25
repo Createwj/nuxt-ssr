@@ -1,11 +1,10 @@
 {
+  "prettier.enable": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "editor.formatOnSave": true,
-  "vetur.validation.template": false,
-  "vetur.validation.script": false,
-  "vetur.validation.style": false,
-  "vue/no-multiple-template-root": 0,
-  "unocss.root": "packages/client"
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "editor.formatOnSave": true
 }

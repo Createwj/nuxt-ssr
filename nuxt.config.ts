@@ -8,21 +8,41 @@ const alias = {
 }
 
 export default defineNuxtConfig({
+  modules: [
+    '@vueuse/nuxt',
+    '@unocss/nuxt',
+    '@pinia/nuxt',
+    '@nuxtjs/color-mode',
+    '@nuxt/content',
+  ],
+  experimental: {
+    reactivityTransform: true,
+  },
+  unocss: {
+    preflight: true,
+  },
+  colorMode: {
+    classSuffix: '',
+  },
   app: {
     head: {
-      title: 'Nuxt 3 Awesome Starter',
-      titleTemplate: '%s - Nuxt 3 Awesome Starter',
+      charset: 'utf-16',
+      viewport: 'width=500, initial-scale=1',
       meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Nuxt 3 Awesome Starter',
-        },
+        // <meta name="description" content="My amazing site">
+        { name: 'description', content: 'My amazing site.' },
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
+    pageTransition: {
+      name: 'fade',
+      mode: 'out-in', // default
+    },
+    layoutTransition: {
+      name: 'slide',
+      mode: 'out-in', // default
     },
   },
-  build: {},
-  css: ['assets/common.css'],
+  content: {
+    // https://content.nuxtjs.org/api/configuration
+  },
 })
