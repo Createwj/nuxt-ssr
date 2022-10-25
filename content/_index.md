@@ -5,7 +5,7 @@ description: 'meta description of the page'
 
 <!-- Content of the page -->
 
-# Hello Content
+# Content
 
 Checkout the [about page](/_about).
 
